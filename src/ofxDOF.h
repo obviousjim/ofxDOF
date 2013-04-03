@@ -4,6 +4,7 @@
  * Prototyped as part of the RGBDToolkit, extracted out as a simple add on for a workshop at ITP
  *
  * James George (@obviousjim) -- 4/3/2013 http://www.jamesgeorge.org : http://github.com/obviousjim
+ *
  */
 
 #pragma once
@@ -63,7 +64,6 @@ class ofxDOF {
 	ofShader depthOfField;
 	ofShader focusAssist;
 
-	
 	float blurAmount;
 	float focalRange;
 	float focalDistance;
