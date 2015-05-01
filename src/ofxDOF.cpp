@@ -49,7 +49,12 @@ void ofxDOF::setup(int width, int height){
     dofQuad.addTexCoord(ofVec2f(width,0));
     dofQuad.addTexCoord(ofVec2f(width,height));
 	
-	setShaderPath("dof/");
+    if (ofIsGLProgrammableRenderer()) {
+        setShaderPath("dof_gl3/");
+    }
+    else {
+        setShaderPath("dof/");
+    }
 }
 
 //default path is bin/data/dof/
