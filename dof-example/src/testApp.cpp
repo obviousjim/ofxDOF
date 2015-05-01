@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	depthOfField.setup(1280,720);
+	depthOfField.setup(ofGetWidth(), ofGetHeight());
 	
 	for(int i = 0; i < 100; i++){
 		boxPositions.push_back(ofVec3f(ofRandom(-300, 300),

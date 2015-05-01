@@ -105,14 +105,14 @@ ofFbo& ofxDOF::getFbo(){
 }
 
 void ofxDOF::begin(){
-	
 	dofTarget.begin();
 	ofClear(0,0,0,0);
-	glEnable(GL_DEPTH_TEST);
+    ofEnableDepthTest();
 }
 
 void ofxDOF::end(){
-	dofTarget.end();
+    ofDisableDepthTest();
+    dofTarget.end();
 	
 	//composite
 	swap.begin();
